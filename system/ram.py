@@ -6,5 +6,5 @@ def get_ram():
         "usage_percent" : ram.percent,
         "usage_bytes" : ram.used,
         "available_bytes" : ram.available,
-        "total_byts" : ram.total
+        "total_bytes" : ram.total
     }
