@@ -27,6 +27,3 @@ def get_interfaces():
         interfaces.append(interface)
 
     return interfaces
-
-
-print(get_interfaces())

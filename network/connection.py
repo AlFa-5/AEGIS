@@ -25,6 +25,3 @@ def get_connections():
         result.append(connection)
 
     return result
-
-
-print(get_connections())

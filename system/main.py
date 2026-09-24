@@ -11,5 +11,3 @@ system = {
     "memory": get_ram(),
     "disk": get_disk()
 }
-
-print(system)
