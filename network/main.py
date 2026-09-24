@@ -12,5 +12,3 @@ network_data = {
     "traffic": traffic,
     "connections": connections
 }
-
-print(network_data)
