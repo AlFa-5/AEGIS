@@ -1,31 +1,12 @@
 import KpiCard from './components/KpiCard'
+import Header from './components/Header'
 
 function App() {
   return (
     <main className="min-h-screen bg-[#080B14] text-[#F1F5F9]">
       <div className="mx-auto max-w-7xl px-8 py-8">
 
-        <header className="flex items-center justify-between">
-          <div>
-            <h1 className="text-3xl font-bold tracking-tight">
-              AEGIS
-            </h1>
-
-            <p className="mt-1 text-sm text-[#8B95A7]">
-              Personal Security Monitor
-            </p>
-          </div>
-
-          <div className="text-right">
-            <div className="text-sm text-[#34D399]">
-              ● SYSTEM ONLINE
-            </div>
-
-            <div className="mt-1 text-xs text-[#8B95A7]">
-              20:42:18
-            </div>
-          </div>
-        </header>
+        <Header/>
 
         <section className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
 
