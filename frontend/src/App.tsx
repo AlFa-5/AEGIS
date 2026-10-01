@@ -68,6 +68,8 @@ function App() {
   const [system, setSystem] = useState<SystemData | null>(null)
   const [network, setNetwork] = useState<NetworkData | null>(null)
 
+  const [rulesRefreshKey, setRulesRefreshKey] = useState(0)
+
   const [trafficHistory, setTrafficHistory] = useState<
     {
       time: string
@@ -173,13 +175,19 @@ function App() {
               {/* RULE EDITOR */}
 
               <div className="xl:col-span-3">
-                <RuleEditor />
+                <RuleEditor
+                  onRuleSaved={() =>
+                    setRulesRefreshKey(prev => prev + 1)
+                  }
+                />
               </div>
 
               {/* RULES */}
 
               <div className="xl:col-span-2">
-                <RulesCard />
+                <RulesCard
+                  refreshKey={rulesRefreshKey}
+                />
               </div>
 
             </div>
