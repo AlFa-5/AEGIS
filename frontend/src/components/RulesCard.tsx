@@ -112,7 +112,7 @@ function RulesCard({ refreshKey }: RulesCardProps) {
 
       {/* RULES */}
 
-      <div className="mt-6 space-y-3">
+      <div className="mt-6 max-h-[420px] space-y-3 overflow-y-auto pr-2">
 
         {loading ? (
 
